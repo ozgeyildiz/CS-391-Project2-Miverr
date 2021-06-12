@@ -1,0 +1,339 @@
+function MiverrHome() {
+    return (
+        <div>
+          <meta charSet="utf-8" />
+          <meta name="description" content="FiverrClone" />
+          <meta name="author" content="CS391 Project" />
+          <link rel="stylesheet" href="./css/layout.css" />
+          <title>MIVERR</title>
+          <div id="header">
+            <a href="mainpage.html">
+              <img id="logo" src="./res/logo.png" />
+            </a>
+            <a href="mainpage.html"> 
+              <h2 id="homebutton">Home</h2>
+            </a>
+            <a href="./profile.html">
+              <h2 id="profileButton">Profile</h2>
+            </a>
+            <a href="./gigs.html">
+              <h2 id="gigs">Create Notices</h2>
+            </a>
+            <a href="./offeredgigs.html">
+              <h2 id="offeredgigs">Gigs Offered</h2>
+            </a>
+            <p>
+            </p><form id="logoutform" method="post">
+              <input type="hidden" defaultValue={1} />
+              <input className="button" type="submit" defaultValue="Logout" id="logout" />
+            </form>
+            <p />
+          </div>
+          <section>
+            <form id="loginform" method="post">
+              <h2 className="prettyColorText" style={{backgroundColor: 'white'}}>Sign In</h2>
+              <label htmlFor username>Username: </label>
+              <br />
+              <input id="usernameLogin" type="text" minLength={5} maxLength={15} required />
+              <br />
+              <label htmlFor password>Password:</label>
+              <br />
+              <input id="passwordLogin" type="password" minLength={6} required />
+              <br />
+              <input className="button" style={{marginTop: '10px'}} type="submit" defaultValue="Sign in" />
+            </form>
+            <div id="signinform">
+              <h2 className="prettyColorText" style={{backgroundColor: 'white'}}>Register</h2>
+              <form id="userreg" method="post">
+                <label htmlFor mail>Mail address:</label>
+                <br />
+                <input id="mail" type="email" placeholder="Enter your Email Address" required />
+                <br />
+                <label htmlFor username>Username:</label>
+                <br />
+                <input id="username" type="text" minLength={4} maxLength={20} required />
+                <br />
+                <label htmlFor password>Password:</label>
+                <br />
+                <input id="password" type="password" minLength={6} required />
+                <br />
+                <label htmlFor firstname>Full Name:</label>
+                <br />
+                <input id="name" type="text" maxLength={30} required />
+                <br />
+                <label htmlFor country>Country:</label>
+                <br />
+                <select name="country" id="country" selected="Turkey" required>
+                  <option value="Turkey">Tr</option>
+                  <option value="United States">Us</option>
+                  <option value="New Zealand">Nz</option>
+                  <option value="Germany">Gr</option>
+                </select>
+                <br />
+                <input className="button" style={{marginTop: '5px'}} type="submit" defaultValue="Register" />
+              </form>
+            </div>
+            <div id="profile">
+              <div className="userProfile">
+                <h3 id="userName"> </h3>
+                <h1 className="mainInformationBox">Welcome to Miverr!</h1>
+                <h3>In this website, you can publish notices on the jobs you want to hire people for!</h3>
+                <h3>Find numerous jobs, get the employer's information to negotiate in private!</h3>
+              </div>
+            </div>
+            <div id="feed">
+              <article className="talentArticle">
+                <h2>Discover Great Talent</h2>
+                <p>Curated Talent Awaits You</p>
+              </article>
+              <article className="thingsArticle">
+                <h2>Get Things Done</h2>
+                <p>We have an outstanding team ready to accomplish your most demanding tasks</p>
+              </article>
+            </div>
+          </section>
+          <footer>
+            <h2 style={{textAlign: 'right', color: 'white'}}>CS391 Project</h2>
+            <div id="footer">
+              <img id="logo" src="./res/logo.png" />
+            </div>
+          </footer>
+        </div>
+      );
+  }
+
+
+  function profile() {
+    return (
+        <div>
+          <meta charSet="utf-8" />
+          <meta name="description" content="FiverrClone" />
+          <meta name="author" content="CS391 Project" />
+          <link rel="stylesheet" href="./css/layout.css" />
+          <title>MIVERR</title>
+          <div id="header">
+            <a href="mainpage.html">
+              <img id="logo" src="./res/logo.png" />
+            </a>
+            <a href="mainpage.html"> 
+              <h2 id="homebutton">Home</h2>
+            </a>
+            <a href="./profile.html">
+              <h2 id="profileButton">Profile</h2>
+            </a>
+            <a href="./gigs.html">
+              <h2 id="gigs">Create Notices</h2>
+            </a>
+            <a href="./offeredgigs.html">
+              <h2 id="offeredgigs">Gigs Offered</h2>
+            </a>
+            <p>
+            </p><form id="logoutform" method="post">
+              <input type="hidden" defaultValue={1} />
+              <input className="button" type="submit" defaultValue="Logout" id="logout" />
+            </form>
+            <p />
+          </div>
+          <div id="profileInfo">
+            <div id="pic"> </div>
+            <div id="username"> </div>
+            <div id="fullname"> </div>
+            <div id="email"> </div>
+            <button id="edit" className="button" type="submit">Edit/ <br /> Remove Notice</button>
+            <div> 
+              <h1 className="prettyColorText">Users Published Notices</h1>
+            </div>
+            <div id="feed"> 
+            </div>
+          </div>
+          <footer>
+            <h2 style={{textAlign: 'right', color: 'white'}}>CS391 Project</h2>
+            <div id="footer">
+              <img id="logo" src="./res/logo.png" />
+            </div>
+          </footer>
+        </div>
+      );
+
+
+
+
+function offeredgigs() {
+    return (
+        <div>
+          <meta charSet="utf-8" />
+          <meta name="description" content="FiverrClone" />
+          <meta name="author" content="CS391 Project" />
+          <link rel="stylesheet" href="./css/layout.css" />
+          <title>MIVERR</title>
+          <div id="header">
+            <a href="mainpage.html">
+              <img id="logo" src="./res/logo.png" />
+            </a>
+            <p>
+            </p><h1>Balance: <span id="balanceText" /></h1>
+            <p />
+            <a href="mainpage.html"> 
+              <h2 id="homebutton">Home</h2>
+            </a>
+            <a href="./profile.html">
+              <h2 id="profileButton">Profile</h2>
+            </a>
+            <a href="./gigs.html">
+              <h2 id="gigs">Create Notices</h2>
+            </a>
+            <a href="./offeredgigs.html">
+              <h2 id="offeredgigs">Gigs Offered</h2>
+            </a>
+            <p>
+            </p><form id="logoutform" method="post">
+              <input type="hidden" defaultValue={1} />
+              <input className="button" type="submit" defaultValue="Logout" id="logout" />
+            </form>
+            <p />
+          </div>
+          <section>
+            <div id="feed">
+              <article className="feedBox">
+                <h3 className="prettyColorText">Web Design</h3><p>I will design any web application.</p>
+                <p style={{textAlign: 'right'}}><button type="button" id="web">Buy For $30</button> Requested by: Özge<img src="./res/tr.png" className="smallProfilePic" />
+                </p><p>Contact from: ozge@gmail.com</p><p />
+              </article>
+              <article className="feedBox">
+                <h3 className="prettyColorText">Music Cover</h3><p>I will make a cover of any song you want on guiter</p>
+                <p style={{textAlign: 'right'}}><button type="button" id="music">Buy For $10</button> Requested by: Ataberk<img src="./res/us.png" className="smallProfilePic" />
+                </p><p>Contact from: ataberk@gmail.com</p><p />
+              </article>
+              <article className="feedBox">
+                <h3 className="prettyColorText">Voice Acting</h3><p>I will voice any movie movie scene you want</p>
+                <p style={{textAlign: 'right'}}><button type="button" id="voice">Buy For $10</button> Requested by: Beste<img src="./res/gr.png" className="smallProfilePic" />
+                </p><p>Contact from: beste@gmail.com</p><p />
+              </article>
+            </div>
+          </section>
+          <footer>
+            <h2 style={{textAlign: 'right', color: 'white'}}>CS391 Project</h2>
+            <div id="footer">
+              <img id="logo" src="./res/logo.png" />
+            </div>
+          </footer>
+        </div>
+      );
+    }
+
+    function editProfile() {
+        return (
+            <div>
+              <meta charSet="utf-8" />
+              <meta name="description" content="FiverrClone" />
+              <meta name="author" content="CS391 Project" />
+              <link rel="stylesheet" href="./css/layout.css" />
+              <title>MIVERR</title>
+              <div id="header">
+                <a href="mainpage.html">
+                  <img id="logo" src="./res/logo.png" />
+                </a>
+                <a href="mainpage.html"> 
+                  <h2 id="homebutton">Home</h2>
+                </a>
+                <a href="./profile.html">
+                  <h2 id="profileButton">Profile</h2>
+                </a>
+                <a href="./gigs.html">
+                  <h2 id="gigs">Create Notices</h2>
+                </a>
+                <a href="./offeredgigs.html">
+                  <h2 id="offeredgigs">Gigs Offered</h2>
+                </a>
+                <p>
+                </p><form id="logoutform" method="post">
+                  <input type="hidden" defaultValue={1} />
+                  <input className="button" type="submit" defaultValue="Logout" id="logout" />
+                </form>
+                <p />
+              </div>
+              <div id="profileInfo">
+                <form id="noticesform" method="post">
+                  <div id="pic"> </div>
+                  <div id="username"> </div>
+                  <div id="fullname"> </div>
+                  <div id="country"> </div>
+                  <div id="email"> </div>
+                  <div id="passwordBox"> </div>
+                  <div> 
+                    <h1 className="prettyColorText">Published Notices List</h1>
+                    <h4> Please pick the notices you published you would like to remove below. </h4>
+                    <h4>Hold CTRL / CMD for selecting multiple fields. </h4>
+                  </div>
+                  <div id="titleList"> 
+                  </div>
+                </form>
+              </div>
+              <footer>
+                <h2 style={{textAlign: 'right', color: 'white'}}>CS391 Project</h2>
+                <div id="footer">
+                  <img id="logo" src="./res/logo.png" />
+                </div>
+              </footer>
+            </div>
+          );
+    }
+
+
+    function gigs() {
+        return (
+            <div>
+              <meta charSet="utf-8" />
+              <meta name="description" content="FiverrClone" />
+              <meta name="author" content="CS391 Project" />
+              <link rel="stylesheet" href="./css/layout.css" />
+              <title>MIVERR</title>
+              <div id="header">
+                <a href="mainpage.html">
+                  <img id="logo" src="./res/logo.png" />
+                </a>
+                <a href="mainpage.html"> 
+                  <h2 id="homebutton">Home</h2>
+                </a>
+                <a href="./profile.html">
+                  <h2 id="profileButton">Profile</h2>
+                </a>
+                <a href="./gigs.html">
+                  <h2 id="gigs">Create Notices</h2>
+                </a>
+                <a href="./offeredgigs.html">
+                  <h2 id="offeredgigs">Gigs Offered</h2>
+                </a>
+                <p>
+                </p><form id="logoutform" method="post">
+                  <input type="hidden" defaultValue={1} />
+                  <input className="button" type="submit" defaultValue="Logout" id="logout" />
+                </form>
+                <p />
+              </div>
+              <div className="gigFormContainer">
+                <form id="createGigForm" method="post">
+                  <label htmlFor title className="prettyColorText">Title:</label>
+                  <br />
+                  <input id="title" className="titleBox" type="text" placeholder="Enter a title" maxLength={100} required />
+                  <br />
+                  <label htmlFor description className="prettyColorText">Job Description (max 600 characters):</label>
+                  <br />
+                  <textarea id="description" className="descriptionBox" cols={40} rows={5} maxLength={600} required defaultValue={""} /> 
+                  <br />
+                  <input className="button" style={{marginTop: '5px'}} type="submit" defaultValue="Upload" />
+                </form>
+              </div>
+              <footer>
+                <h2 style={{textAlign: 'right', color: 'white'}}>CS391 Project</h2>
+                <div id="footer">
+                  <img id="logo" src="./res/logo.png" />
+                </div>
+              </footer>
+            </div>
+          );
+    }
+
+
+
+  }
