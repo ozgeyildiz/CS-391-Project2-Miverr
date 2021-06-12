@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="FiverrClone">
+        <meta name="author" content="CS391 Project">
+        <link rel="stylesheet" href="./css/layout.css"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="./js/utils.js"></script>
+        <script type="text/javascript" src="./js/offeredgigs.js"></script>
+        <title>MIVERR</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <a href="mainpage.html">
+                <img id="logo" src="./res/logo.png">
+        
+            </a>
+            <p>
+                <h1>Balance: <span id="balanceText"></span></h1>
+            </p>
+            
+            <a href = "mainpage.html"> 
+                <h2 id="homebutton">Home</h2>
+            </a>
+            
+            <a href="./profile.html">
+                <h2 id="profileButton">Profile</h2>
+            </a>
+        
+            <a href="./gigs.html">
+                <h2 id="gigs">Create Notices</h2>
+            </a>
+            <a href="./offeredgigs.html">
+                <h2 id="offeredgigs">Gigs Offered</h2>
+            </a>
+            
+                    <p>
+                        <form id="logoutform" method="post">
+                            <input type="hidden" value="1">
+                            <input class="button" type="submit" value="Logout" id="logout">
+                        </form>
+                    </p>
+        </div>
+        <section>
+            <div id="feed">
+                <article class="feedBox">
+                    <h3 class="prettyColorText">Web Design</h3><p>I will design any web application.</p>
+                    <p style="text-align: right;"><button type="button" id="web" >Buy For $30</button> Requested by: Özge<img src="./res/tr.png" class="smallProfilePic">
+                    <p>Contact from: ozge@gmail.com</p></p>
+                </article>
+                <article class="feedBox">
+                    <h3 class="prettyColorText">Music Cover</h3><p>I will make a cover of any song you want on guiter</p>
+                    <p style="text-align: right;"><button type="button" id="music" >Buy For $10</button> Requested by: Ataberk<img src="./res/us.png" class="smallProfilePic">
+                    <p>Contact from: ataberk@gmail.com</p></p>
+                </article>
+                <article class="feedBox">
+                    <h3 class="prettyColorText">Voice Acting</h3><p>I will voice any movie movie scene you want</p>
+                    <p style="text-align: right;"><button type="button" id="voice" >Buy For $10</button> Requested by: Beste<img src="./res/gr.png" class="smallProfilePic">
+                    <p>Contact from: beste@gmail.com</p></p>
+                </article>
+            </div>
+        </section>
+        
+        <footer>
+            <h2 style="text-align:right;color:white;">CS391 Project</h2>
+            <div id="footer">
+                <img id="logo" src="./res/logo.png">
+            </div>
+        </footer>
+        
+        </body>
+    
+</html>

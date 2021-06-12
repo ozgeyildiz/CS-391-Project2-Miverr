@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="FiverrClone">
+    <meta name="author" content="CS391 Project">
+    <link rel="stylesheet" href="./css/layout.css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./js/utils.js"></script>
+    <script type="text/javascript" src="./js/editprofile.js"></script>
+    <title>MIVERR</title>
+</head>
+
+<body>
+
+<div id="header">
+    <a href="mainpage.html">
+        <img id="logo" src="./res/logo.png">
+
+    </a>
+    <a href = "mainpage.html"> 
+        <h2 id="homebutton">Home</h2>
+    </a>
+    <a href="./profile.html">
+        <h2 id="profileButton">Profile</h2>
+    </a>
+
+    <a href="./gigs.html">
+        <h2 id="gigs">Create Notices</h2>
+    </a>
+    <a href="./offeredgigs.html">
+        <h2 id="offeredgigs">Gigs Offered</h2>
+    </a>
+    
+            <p>
+                <form id="logoutform" method="post">
+			        <input type="hidden" value="1">
+			        <input class="button" type="submit" value="Logout" id="logout">
+		        </form>
+            </p>
+</div>
+<div id = "profileInfo">
+    <form id="noticesform" method="post">
+        <div id="pic"> </div>
+        <div id="username"> </div>
+        <div id="fullname"> </div>
+        <div id="country"> </div>
+        <div id="email"> </div>
+        <div id="passwordBox"> </div>
+        <div> 
+            <h1 class="prettyColorText">Published Notices List</h1>
+            <h4> Please pick the notices you published you would like to remove below. </h4>
+            <h4>Hold CTRL / CMD for selecting multiple fields. </h4>
+        </div>
+        <div id ="titleList"> 
+            
+        </div>
+    </form>
+
+</div>
+
+
+<footer>
+    <h2 style="text-align:right;color:white;">CS391 Project</h2>
+    <div id="footer">
+        <img id="logo" src="./res/logo.png">
+    </div>
+    
+</footer>
+
+</body>
+
+</html>

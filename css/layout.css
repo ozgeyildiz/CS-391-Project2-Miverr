@@ -1,0 +1,233 @@
+html,body{
+    height:100%;
+}
+body {
+    background-image: url("../res/backgroundimg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mainInformationBox{
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    font-size: 45px;
+    color: rgb(20, 54, 65); 
+}
+/* Header files are collected here. */
+#header{
+    height:100px;
+    background-color:rgb(6, 20, 37);
+    position:absolute;
+    width:100%;
+    top:0px;
+    font-size:25px;
+    border-width: 2px;
+    border-style:solid;
+}
+#logo {
+    height:100px;
+    width:100px;
+    margin-left:50px;
+}
+#gigs{
+    position:absolute;
+    right:300px;
+    top:20px;
+    box-shadow: 0 4px 1px 0 rgba(255, 255, 255, 0.4);
+    color:rgb(243, 243, 243);
+}
+#profileButton{
+    position:absolute;
+    right:155px;
+    top:20px;
+    box-shadow: 0 4px 1px 0 rgba(255, 255, 255, 0.4);
+    color:rgb(243, 243, 243);
+}
+#homebutton{
+    position:absolute;
+    left:200px;
+    top:20px;
+    box-shadow: 0 4px 1px 0 rgba(255, 255, 255, 0.4);
+    color:rgb(243, 243, 243);
+
+}
+#offeredgigs{
+    position:absolute;
+    right: 570px;
+    top:20px;
+    box-shadow: 0 4px 1px 0 rgba(255, 255, 255, 0.4);
+    color:rgb(243, 243, 243);
+}
+#logoutform {
+    position:absolute;
+    right:60px;
+    top:65px;
+
+}
+
+
+/* Footer files are collected here */
+#footer{
+    height:120px;
+    width:100%;
+    
+    background-color:rgb(6, 20, 37);
+    
+    position: relative;
+    bottom:0;
+    left:0px;
+    border: 0.5px solid;
+}
+
+
+
+/* anything used in the middle is collected here */
+#profile {
+    padding-left: 25%;
+    padding-top: 250px;
+}
+#signinform{
+    position:absolute;
+    left:50px;
+    top:240px;
+    max-width: 500px;
+}
+#loginform{
+    position:absolute;
+    right:50px;
+    top:240px;
+    max-width: 500px;
+}
+#createGigForm{
+    background-color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+.userProfile {
+    background-color:white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    margin-left:10%;
+    width: 500px;
+    height:300px;
+    text-align: center;
+    padding: 10px;
+}
+.thingsArticle {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    height: 100px;
+    margin-left: 40%;
+    text-align: center;
+    width: 300px;
+    margin-top: -130px;
+}
+.talentArticle {
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 0;
+    height: 100px;
+    text-align: center;
+    width: 300px;
+    margin-top: 150px;
+}
+.gigFormContainer{
+    margin-left:35%;
+    margin-right:35%;
+    margin-top:10%;
+    box-shadow: 0 4px 6px 0 rgba(23, 104, 73, 0.2);
+}
+
+/* Dashboard related */
+#feed {
+    padding-left: 25%;
+    
+}
+.feedBox {
+    background-color:rgb(255, 255, 255);
+    width:500px;
+    max-height: 500px;
+    margin-top:150px;
+    margin-left:12%;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+}
+.smallProfilePic{
+    vertical-align: middle;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.titleBox{
+    margin-top:10px;
+    margin-bottom:50px;
+    width: 300px;
+    height: 30px;
+}
+.descriptionBox{
+    
+    margin-top:50px;
+    width: 300px;
+    height: 300px;
+}
+
+
+/*profile related*/
+#avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+.profilePic{
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+#profileInfo{
+    margin-top: 150px;
+    text-align: center;
+}
+.editProfileErrorBox{
+    width:500px;
+    margin-left:35%;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+}
+
+/* other classes */
+.prettyColorText {
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    font-size: 32px;
+    color: rgb(20, 54, 65); 
+    margin-top: 50px;
+}
+
+/* buttons */
+.button {
+    width: 80px;
+    padding: 5px;
+    margin: 0 3px;
+    background-color: #82dfc3;
+    outline: none;
+    border: 1px solid #26473f;
+    box-shadow: 2px 2px 2px #3f3f3f;
+  }
+  
+  .button:hover {
+    box-shadow: 2px 2px 3px ;
+  }
+  
+  .button:active {
+    box-shadow: 1px 1px 3px ;
+  }
