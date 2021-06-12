@@ -1,3 +1,9 @@
+import React from 'react';
+import './Miverr.css';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById('app'));
 function MiverrHome() {
     return (
         <div>
