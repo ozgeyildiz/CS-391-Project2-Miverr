@@ -10,7 +10,7 @@ Ataberk Uncueer - S011614
 ## Description
 
 This website is a simplified Fiverr, a user can register and log in to the system to publish/share job notices, as well as find suitable jobs that other users have posted.
-All available job notices sent by other users can be viewed at main page. All notice posts have publishers contact information. Using this contact information (email) users can negotiate and get more detailed information from the publisher privately.
+All available job notices sent by other users can be viewed at main page. All notice posts have publishers contact information. Using this contact information (email) users can negotiate and get more detailed information from the publisher privately. We try to add react.
 
 ## How to Run?
 To run this project you do not need any external downloads, no external library was used. After downloading the whole project, simply double click on the **"mainpage.html"**, which will open the web application on your browser locally. From there you are free to navigate through inside the web application.
